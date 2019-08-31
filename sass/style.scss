@@ -1,3 +1,5 @@
+
+// Base style
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +15,8 @@ body {
 .bold {
     font-weight: 800;
 }
+
+// Header
 header {
     background-size:cover;
     background-attachment: fixed;
@@ -22,6 +26,7 @@ header {
     url(img/header-back.jpeg);
     color: #fff;
     overflow: auto;
+    // Text box in header
     .txt-box {
         .heading {
             font-size: 40px;
@@ -43,16 +48,18 @@ header {
             letter-spacing: 4px;
             font-size: 18px;
             margin-top: 20px;
-            border: 2px solid #fff;
-            border-radius: 4px;
+            border: 1px solid #fff;
+            border-radius: 2px;
             padding: 5px 10px;
             color: #fff;
+            padding-left: 14px;
             text-decoration: none;
             transition: all .3s ease-in;
             &:hover {
                 transform: translateY(-3px);
                 box-shadow: 3px 3px 10px rgba(167, 167, 167, 0.589);
             }
+            
         }
     }
     .icon-hold {
@@ -61,47 +68,56 @@ header {
         bottom: 5px;
 
     }
+    .jump {
+        color: rgb(255, 255, 255);
+        transform: translateY(-5px);
+        font-size: 55px !important;
+    }
     .icon {
+        transition: all .3s;
         text-align: center;
         margin: 0 auto;
         font-size: 40px;
         display: block;
+        color: rgb(212, 212, 212);
     }
-    
-nav {
-    margin-top: 10px;
-    .logo-hold {
-        display:inline;
-    }
-    .logo {
-        display: inline;
-        color: rgb(216, 216, 216);
-        font-weight: 600;
-        letter-spacing: 4px;
-        font-size: 24px;
-        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.795);
-    }
-    .items-hold {
-        display: inline;
-        float:right;
-        margin-top: 7px;
+    // Head nav
+    nav {
+        margin-top: 10px;
+        .logo-hold {
+            display:inline;
+        }
+        .logo {
+            display: inline;
+            color: rgb(216, 216, 216);
+            font-weight: 600;
+            letter-spacing: 4px;
+            font-size: 24px;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.795);
+        }
+        .items-hold {
+            display: inline;
+            float:right;
+            margin-top: 10px;
 
-    }
-    .list-item {
-        display: inline;
-        margin-left: 10px;
-    }
-    .list-a {
-        font-size: 14px;
-        
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 3px;
-        
+        }
+        .list-item {
+            display: inline;
+            margin-left: 10px;
+        }
+        .list-a {
+            font-size: 14px;
+            
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 3px;
+            
+        }
     }
 }
-}
+
+// Footer
 footer {
     padding: 40px 0;
     background-color: rgb(22, 22, 22);
@@ -116,6 +132,10 @@ footer {
         text-align: center;
     }
 }
+
+// Animations
+
+// CSS Commands, Meda responsive tags
 @media (max-width: 700px){
     header {
         .txt-box{
